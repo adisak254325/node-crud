@@ -61,7 +61,7 @@ app.get("/data", (req, res) => {
         res.render("data", { model: test });
 });
 
-app.listen(3030, () => {
+app.listen(3000, () => {
     {
         console.log("Server started (http://localhost:3000/) !");
     }});
