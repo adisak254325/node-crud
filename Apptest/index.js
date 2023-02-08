@@ -19,7 +19,7 @@ const sql_create = `CREATE TABLE IF NOT EXISTS Books (
     }
     console.log("Successful creation of the 'Books' table");
     
-    // เพิ่มข้อมูลในตาราง
+    /* เพิ่มข้อมูลในตาราง*/
     const sql_insert = `INSERT INTO Books (Book_ID, Title, Author, Comments) VALUES
     (1, 'Somchai', 'Somchai', 'Programming'),
     (2, 'Somsri', 'Somsri', 'Coding'),
@@ -61,7 +61,7 @@ app.get("/data", (req, res) => {
         res.render("data", { model: test });
 });
 
-app.listen(3000, () => {
+app.listen(3030, () => {
     {
         console.log("Server started (http://localhost:3000/) !");
     }});
