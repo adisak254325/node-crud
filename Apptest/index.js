@@ -17,7 +17,7 @@ const sql_create = `CREATE TABLE IF NOT EXISTS Books (
     if (err) {
       return console.error(err.message);
     }
-    console.log("Successful creation of the 'Books' table");
+    console.log("Successful creation of the 'books' table");
     
     /* เพิ่มข้อมูลในตาราง*/
     const sql_insert = `INSERT INTO Books (Book_ID, Title, Author, Comments) VALUES
